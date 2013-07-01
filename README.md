@@ -1,4 +1,4 @@
-website
-=======
+new website
+===========
 
-Static mockup for my new personal website (Awesomeness included).
+New static mockup for my new personal website.
