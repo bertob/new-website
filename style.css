@@ -22,7 +22,7 @@ nav a {
 	font-size: 1.8em;
 	font-weight: 200;
 	text-align: center;
-	line-height: 1.2em;
+	line-height: 1.3em;
 	width: 550px;
 	margin-left: auto;
 	margin-right: auto;
@@ -195,13 +195,10 @@ nav a:hover {
 }
 .workitem {
   /* Just in case there are inline attributes */
+  display: inline;
   width: 240px !important;
   height: 240px !important;
-  padding: 8px !important;
-}
-
-#grid > *:last-child {
-	margin-right: none;
+  margin: 10.4px;
 }
 
 /*
