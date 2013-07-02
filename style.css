@@ -60,14 +60,14 @@ nav a {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.overlaytitle {
+.overlay > h2 {
 	font-size: 1.1em;
 	font-weight: 400;
 	color: white;
 	margin-top: 10px;
 	margin-bottom: -10px;
 }
-.overlayinfo {
+.overlay > p {
 	font-size: 0.57em;
 	font-weight: 400;
 	color: #999;
@@ -177,48 +177,52 @@ nav a:hover {
 
 
 #grid {
-   -webkit-column-count: 3;
-   -webkit-column-gap:   30px;
-   -moz-column-count:    3;
-   -moz-column-gap:      30px;
-   column-count:         3;
-   column-gap:           30px;
+   -webkit-row-count: 3;
+   -webkit-row-gap:   30px;
+   -moz-row-count:    3;
+   -moz-row-gap:      30px;
+   row-count:         3;
+   row-gap:           30px;
    padding-top: 30px
 }
-#grid > * {
+.workitem {
   /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: 100% !important;
-  margin-bottom: 30px;
+  width: 240px !important;
+  height: 240px !important;
+  margin: 8px !important;
+}
+
+#grid > *:last-child {
+	margin-right: none;
 }
 
 /*
 @media (max-width: 1200px) {
   #grid {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
+  -moz-row-count:    4;
+  -webkit-row-count: 4;
+  row-count:         4;
   }
 }
 @media (max-width: 1000px) {
   #grid {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
+  -moz-row-count:    3;
+  -webkit-row-count: 3;
+  row-count:         3;
   }
 }
 @media (max-width: 800px) {
   #grid {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
+  -moz-row-count:    2;
+  -webkit-row-count: 2;
+  row-count:         2;
   }
 }
 @media (max-width: 400px) {
   #grid {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
+  -moz-row-count:    1;
+  -webkit-row-count: 1;
+  row-count:         1;
   }
 }
 */
@@ -229,28 +233,9 @@ nav a:hover {
 }
 
 
-.workitemrow {
-	height: 240px;
-	margin-bottom: 26px;
-	width: 100%;
-	/*background-color: red;*/
-}
 
-.workitem {
-	display: inline-block;
-	margin-right: 4.15%;/*26px*/
-	padding-bottom: 26px;
-	width: 30%
-}
-.workitem:last-child {
-	margin-right: 0px;
-}
-.workimg {
-	position: absolute;
-}
 .overlay {
 	display: block;
-	height: 1000px;
 	opacity: 0.0;
 	position: absolute;
 	width: 240px;
@@ -261,7 +246,7 @@ nav a:hover {
 	
 	transition: all 0.5s ease-out;
 	transition-property : opacity;
-	transition-duration : 0.5s;	
+	transition-duration : 0.5s;
 	
 	transform: translateY(240px);
 }
