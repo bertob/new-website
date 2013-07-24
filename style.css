@@ -40,8 +40,8 @@ nav a {
 .small {
 	font-size: 1.6em;
 	font-weight: 400;
-	margin-top: 60px;
-	margin-bottom: none;
+	margin-top: 50px;
+	margin-bottom: 0;
 }
 .smallinfo {
 	font-size: 1.2em;
