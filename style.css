@@ -190,92 +190,66 @@ nav a:hover {
 
 
 
-#grid {
-   padding-top: 30px
+
+
+
+.workitemrow {
+height: 240px;
+margin-bottom: 26px;
+width: 100%;
+/*background-color: red;*/
 }
 .workitem {
-  /* Just in case there are inline attributes */
-  display: inline;
-  width: 240px !important;
-  height: 240px !important;
-  margin: 10.4px;
+display: inline-block;
+margin-right: 4.15%;/*26px*/
+padding-bottom: 26px;
+width: 30%
 }
+.workitem:last-child {
+margin-right: 0px;
+}
+.workimg {
+position: absolute;
+}
+.workoverlay {
+display: block;
+height: 1000px;
+opacity: 0.0;
+position: absolute;
+width: 240px;
+background: rgb(0, 0, 0) transparent;
+background: rgba(0, 0, 0, 0.6);
+margin-top: -45px;
+height: 45px;
 
+transition: all 0.5s ease-out;
+transition-property : opacity;
+transition-duration : 0.5s;
+
+
+transform: translateY(240px);
+}
+.workitem:hover > div.workoverlay {
+display: inline;
+opacity: 1;
+background: rgb(0, 0, 0) transparent;
+background: rgba(0, 0, 0, 0.6);
 /*
-@media (max-width: 1200px) {
-  #grid {
-  -moz-row-count:    4;
-  -webkit-row-count: 4;
-  row-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #grid {
-  -moz-row-count:    3;
-  -webkit-row-count: 3;
-  row-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #grid {
-  -moz-row-count:    2;
-  -webkit-row-count: 2;
-  row-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #grid {
-  -moz-row-count:    1;
-  -webkit-row-count: 1;
-  row-count:         1;
-  }
-}
+transition: all 0.3s ease-out;
+/*transition-property : opacity;
+transition-duration : 0.3s;
 */
-
-
-.justimg {
-	opacity: 0.3;
+/*
+-moz-transform: translateY(-100%);
+-o-transform: translateY(-100%);
+-webkit-transform: translateY(-100%);
+*/
+/*
+opacity: 1;
+transform: translateY(118%);*/
 }
-
-
-
-.overlay {
-	display: block;
-	opacity: 0.0;
-	position: absolute;
-	width: 240px;
-	background: rgb(0, 0, 0) transparent;
-	background: rgba(0, 0, 0, 0.6);
-	margin-top: -65px;
-	height: 65px;
-	
-	transition: all 0.5s ease-out;
-	transition-property : opacity;
-	transition-duration : 0.5s;
-	
-	transform: translateY(240px);
-}
-.workitem:hover > div.overlay {
-	display: inline;
-	opacity: 1;
-	background: rgb(0, 0, 0) transparent;
-	background: rgba(0, 0, 0, 0.6);
-	/*
-	transition: all 0.3s ease-out;
-	/*transition-property : opacity; 
-	transition-duration : 0.3s;
-	*/
-	/*
-	-moz-transform: translateY(-100%);
-	-o-transform: translateY(-100%);
-	-webkit-transform: translateY(-100%);
-	*/
-	/*
-	opacity: 1;
-	transform: translateY(118%);*/
-}
-.overlay > * {
-	margin-left: 15px;
+.overlaytext {
+margin-left: 20px;
 }
 /* |||||||||||| CONTACT |||||||||||| */
 .contact {
