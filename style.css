@@ -26,6 +26,7 @@ nav a {
 	width: 550px;
 	margin-left: auto;
 	margin-right: auto;
+	margin: 0px auto 50px
 }
 .header {
 	font-size: 2.4em;
@@ -92,7 +93,7 @@ body {
 }
 /* |||||||||||| HEADER |||||||||||| */
 header {
-	height: 100px;
+	height: 120px;
 }
 .logo {
 	font-weight: 200;
@@ -100,31 +101,33 @@ header {
 	padding: 10px 20px;
 	background-color: white;
 	border-radius: 40px;
-	
+	border: 1.9px solid #666;
+	background-color: #fff !important;
 }
 .active {
 	background-color: #e4e4e4;
 }
 .logo:hover {
-	background-color: #eee;
+	background-color: #eee !important;
 }
 nav a {
 	margin-right: 12px;
 	padding: 10px 20px;
 	background-color: white;
 	border-radius: 40px;
+	border: 1.9px solid #666;
 }
 nav a:hover {
 	background-color: #eee; /*#e4e4e4;*/
 }
 #topleft > * {
 	float: left;
-	margin-top: 8px;
+	margin-top: 14px;
 	margin-left: 20px;
 }
 #topright {
 	float: right;
-	margin-top: 40px;
+	margin-top: 50px;
 	margin-right: 20px;
 }
 #topright > * {
@@ -188,7 +191,7 @@ nav a:hover {
 
 .workitemrow {
 height: 240px;
-margin-bottom: 30px;
+margin-bottom: 32px;
 width: 100%;
 /*background-color: red;*/
 }
@@ -335,199 +338,3 @@ footer {
 .social *:first-child {
 	margin-right: none;
 }
-
-
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-/* 860-700 */
-@media screen and (max-width: 860px) {
-	html, header, footer, #page {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	body, #wrap {
-		max-width: auto;
-	}
-	#page {
-		background-color: red;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-	/* |||||||||||| HEADER |||||||||||| */
-	#topleft {
-		margin-left: 3%;
-	}
-	#topleft {
-		margin-left: 0px;
-	}
-	#topright {
-		margin-right: 3%;
-		margin-top: 38px;
-	}		
-	/* |||||||||||| BLOG |||||||||||| */
-	.blogpost {
-		clear: both;
-		width: 100%;
-		padding-left: 2%;
-		padding-right: 2%;
-		margin-bottom: 0px;
-	}
-	.blogpost:last-child {
-		margin-bottom: none;
-	}
-	.blogpost > * {
-		float: left;
-	}
-	.blogpostimg {
-		width: 15%;
-		margin-right: 4%;/*30px;*/
-	}
-	.blogposttext {
-		width: 76%;/*630px;*/
-		background-color: blue;
-	}
-	.blogposttitle {
-		font-size: 1.7em;
-	}
-	.blogpostexcerpt {
-	}
-}
-/* 700-600 */
-@media screen and (max-width: 700px) {
-	/* * {background-color: #fff;} */
-	
-	#logo {
-		padding-right: 0px;
-		margin-right: 16px;
-	}
-	#mainnav {
-		margin-right: 0;
-	}
-	#mainnav > * {
-		font-size: 0.8em;
-		margin-right: 0;
-	}
-	#topright > * {
-		font-size: 0.9em;
-	}
-	#topleft {
-		
-	}
-	#logo {
-		margin-left: 0px;
-	}
-	.blogpost {
-		margin-bottom: 10px;
-	}
-	.blogpostimg {
-		width: 16%;
-		margin-right: 4%;
-	}
-	.blogposttext {
-		margin-right: 4%;
-	}
-	.blogposttitle {
-		font-size: 1.5em;
-		font-weight: 400;
-		margin-top: -7px;
-	}
-	.blogpostexcerpt {
-		font-size: 0.7em;
-	}
-}
-/* 600-500 */
-@media screen and (max-width: 600px) {
-	header {
-		height: auto;
-	}
-	
-	#topleft > * {
-		float: none;
-	}
-	#topright {
-		float: none;
-	}
-	#topleft {
-		margin-left: 0px;
-	}
-	#logo {
-		width: 6%;
-		height: auto;
-		margin-left: 47%;
-		margin-right: 47%;
-		margin-top: 30px;
-	}
-	#mainnav {
-		margin-top: 0px;
-		padding: 0;
-		text-align: center;
-	}
-	#mainnav > *:last-child {
-		margin-left: none;
-	}
-	.blogpost {
-		margin-bottom: 40px;
-	}
-	.blogpostimg {
-		width: 20%;
-		margin-right: 4%;
-		margin-left: 1%;
-	}
-	.blogposttext {
-		width: 70%;
-		margin-right: 4%;
-	}
-}
-/* 500-400 */
-@media screen and (max-width: 500px) {
-	.blogpost {
-		margin-bottom: 40px;
-	}
-	.blogpostimg {
-		width: 22%;
-		margin-right: 6%;
-	}
-	.blogposttext {
-		width: 66%;
-		margin-right: 4%;
-	}
-}
-/* 400-300 PHONE */
-@media screen and (max-width: 400px) {
-	#page {
-		background-color: #fff;
-	}	
-	.blogpost {
-		height: 340px;
-	}
-	.blogpostimg {
-		float: none;
-		width: 33%;
-		padding-left: 34%;
-		margin-left: -2%;
-		margin-bottom: 20px;
-	}
-	.blogposttext {
-		float: none;
-		width: 92%;
-		margin-left: 2%;
-		/*background-color: red;*/
-	}
-	.blogpost > * {
-		text-align: center;
-	}
-	.blogpost > * > * {
-		text-align: center;
-	}
-}
-
-
-/*
-@media screen and (max-width: 900px) {
-	* {
-		background-color: red;
-	}
-}
-*/
