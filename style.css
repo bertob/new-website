@@ -60,18 +60,18 @@ nav a {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.overlay h2 {
-	font-size: 1.1em;
-	font-weight: 400;
-	color: white;
-	margin-top: 10px;
-	margin-bottom: -10px;
+.worktitle {
+font-size: 1.1em;
+font-weight: 400;
+color: white;
+margin-top: 10px;
+margin-bottom: -10px;
 }
-.overlay p {
-	font-size: 0.57em;
-	font-weight: 400;
-	color: #999;
-	margin-top: -20px;
+.workinfo {
+font-size: 0.57em;
+font-weight: 400;
+color: white;
+margin-top: -10px;
 }
 /* ############ LAYOUT ############ */
 html, header, footer, #page {
