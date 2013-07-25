@@ -1,12 +1,18 @@
 /* ############ TYPOGRAPHY ############ */
 * {
 	font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-	color: #666;
+	color: #666;	
 }
 p {
 	font-size: 1.25em;
 	line-height: 1.7em;
 	letter-spacing: 0.01em;
+}
+a {
+	text-decoration: underline;
+}
+a.workitem {
+	text-decoration: none;
 }
 nav a {
 	font-size: 1em;
@@ -240,15 +246,17 @@ transition-duration : 0.5s;
 
 
 transform: translateY(240px);
+
 }
-	.workitem:hover > div.workoverlay {
+.workitem:hover > div.workoverlay {
 	display: inline;
 	opacity: 1;
 	background: rgb(0, 0, 0) transparent;
 	background: rgba(0, 0, 0, 0.6);
 }
-.overlaytext {
-	margin-left: 20px;
+.worktitle {
+	padding-left: 20px;
+	text-decoration: none !important;
 }
 /* |||||||||||| CONTACT |||||||||||| */
 .contact {
