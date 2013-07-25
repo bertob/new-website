@@ -1,7 +1,6 @@
 /* ############ TYPOGRAPHY ############ */
 * {
 	font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-	text-decoration: none;
 	color: #666;
 }
 p {
@@ -38,15 +37,16 @@ nav a {
 	padding-bottom: 5px;
 }
 .small {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	font-weight: 400;
 	margin-top: 50px;
 	margin-bottom: 18px;
+	text-align: center !important;
 }
 .smallinfo {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: center;
-	color: #666;
+	color: #888;
 }
 .excerpt {
 	font-size: 1.7em;
@@ -68,22 +68,40 @@ nav a {
 	margin-bottom: 15px;
 }
 .worktitle {
-font-size: 1.1em;
-font-weight: 400;
-color: white;
-margin-top: 10px;
-margin-bottom: -10px;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: -10px;
 }
 .workinfo {
-font-size: 0.57em;
-font-weight: 400;
-color: white;
-margin-top: -10px;
+	font-size: 0.57em;
+	font-weight: 400;
+	color: white;
+	margin-top: -10px;
+}
+.round {
+	padding: 10px 20px;
+	background-color: #eee;
+	border-radius: 40px;
+	/*border: 1.9px solid #666;*/
+	text-decoration: none;
+}
+a.round:hover {
+	background-color: #eee; /*#e4e4e4;*/
+}
+.contactbtn {
+	margin: 80px auto 0px;
+	height: 40px;
+	width: 172px;
+}
+.contactbtn > * {
+	text-align: center;
 }
 /* ############ LAYOUT ############ */
 html, header, footer, #page {
-		margin-left: auto;
-		margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	}
 body {
 	max-width: 800px;
@@ -103,12 +121,8 @@ header {
 }
 .logo {
 	font-weight: 200;
-	margin-right: 12px;
-	padding: 10px 20px;
-	background-color: white;
-	border-radius: 40px;
-	border: 1.9px solid #666;
-	background-color: #fff !important;
+	background-color: #eee !important;
+	text-decoration: none !important;
 }
 .active {
 	background-color: #e4e4e4;
@@ -117,11 +131,7 @@ header {
 	background-color: #eee !important;
 }
 nav a {
-	margin-right: 12px;
-	padding: 10px 20px;
-	background-color: white;
-	border-radius: 40px;
-	border: 1.9px solid #666;
+	
 }
 nav a:hover {
 	background-color: #eee; /*#e4e4e4;*/
@@ -231,27 +241,14 @@ transition-duration : 0.5s;
 
 transform: translateY(240px);
 }
-.workitem:hover > div.workoverlay {
-display: inline;
-opacity: 1;
-background: rgb(0, 0, 0) transparent;
-background: rgba(0, 0, 0, 0.6);
-/*
-transition: all 0.3s ease-out;
-/*transition-property : opacity;
-transition-duration : 0.3s;
-*/
-/*
--moz-transform: translateY(-100%);
--o-transform: translateY(-100%);
--webkit-transform: translateY(-100%);
-*/
-/*
-opacity: 1;
-transform: translateY(118%);*/
+	.workitem:hover > div.workoverlay {
+	display: inline;
+	opacity: 1;
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.6);
 }
 .overlaytext {
-margin-left: 20px;
+	margin-left: 20px;
 }
 /* |||||||||||| CONTACT |||||||||||| */
 .contact {
@@ -304,43 +301,17 @@ margin-left: 20px;
 footer {
 	text-align: center;
 	height: 110px;
+	margin-top: 50px;
 }
 #licenseinfo {
 	font-size: 0.85em;
 	padding-left: 6%;
 	padding-right: 6%;
 	padding-top: 40px;
-}
-#license {
 	margin-top: 10px;
-}
-#licenseicons {
-	margin-top: 40px;
-	margin-bottom: 10px;
-}
-#licenseinfo {
-	max-width: 500px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	line-height: 1.6em;
 }
 /* ############ HACKS ############ */
-#logo {
-	height: 35px !important;
-	margin-top: 31.5px;  /*37.5 - 6*/
-	margin-bottom: 37.5px;
-	margin-right: 30px;
-}
-.social {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	margin-top: 75px;
-	margin-bottom: 50px;
-}
-.social * {
-	margin-right: 20px; 
-}
-.social *:first-child {
-	margin-right: none;
+header a {
+	text-decoration: none;
 }
